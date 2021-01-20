@@ -11,6 +11,8 @@
     // block
   }
   
+// -------------------------------------------------
+
   {
     // these accessible only in block:
     let y = 10;
@@ -22,15 +24,17 @@
     var z = 100;
   }
   
+// -------------------------------------------------
+
   {
     let y = 10;
     const x = 20;
     {
       let y = 6;
-      console.log(y);
+      console.log(y); // 6
     }
   
-    console.log(y);
+    console.log(y); // 10
   
   }
   
